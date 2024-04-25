@@ -6,68 +6,31 @@ using System.Threading.Tasks;
 
 namespace _20_1_
 {
-    class Calc<T, K>
+    class Calc <Ttype,Ptype>
     {
-        public T Value1 { get; set; }
-        public K Value2 { get; set; }
+        private Ttype x;
+        private Ptype y;
+
         public Calc() { }
-        public Calc(T value1, K value2) 
-        { 
-          Value1 = value1; 
-          Value2 = value2; 
-        }
-        public void Add()
+        public Calc(Ttype x, Ptype y)
         {
-            if (typeof(T) == typeof(int) || typeof(K) == typeof(int) ||  typeof(T) == typeof(double) || typeof(K) == typeof(double)  || typeof(T) == typeof(string) || typeof(K) == typeof(string))
-            {
-                double a = Convert.ToDouble(Value1);
-                double b = Convert.ToDouble(Value2);
-                Console.WriteLine($"{Value1} + {Value2} = {a + b}");
-            }
-            else
-            {
-                Console.WriteLine("Неверный тип данных");
-            }
-        }
-        public void Sub()
-        {
-            if (typeof(T) == typeof(int) || typeof(K) == typeof(int) || typeof(T) == typeof(double) || typeof(K) == typeof(double) || typeof(T) == typeof(string) || typeof(K) == typeof(string))
-            {
-                double a = Convert.ToDouble(Value1);
-                double b = Convert.ToDouble(Value2);
-                Console.WriteLine($"{Value1} - {Value2} = {a - b}");
-            }
-            else
-            {
-                Console.WriteLine("Неверный тип данных");
-            }
-        }
-        public void Div()
-        {
-            if (typeof(T) == typeof(int) || typeof(K) == typeof(int) || typeof(T) == typeof(double) || typeof(K) == typeof(double) || typeof(T) == typeof(string) || typeof(K) == typeof(string))
-            {
-                double a = Convert.ToDouble(Value1);
-                double b = Convert.ToDouble(Value2);
-                Console.WriteLine($"{Value1} / {Value2} = {a / b:f2}");
-            }
-            else
-            {
-                Console.WriteLine("Неверный тип данных");
-            }
-        }
-        public void Mul()
-        {
-            if (typeof(T) == typeof(int) || typeof(K) == typeof(int) || typeof(T) == typeof(double) || typeof(K) == typeof(double) || typeof(T) == typeof(string) || typeof(K) == typeof(string))
-            {
-                double a = Convert.ToDouble(Value1);
-                double b = Convert.ToDouble(Value2);
-                Console.WriteLine($"{Value1} * {Value2} = {a * b:f2}");
-            }
-            else
-            { 
-                Console.WriteLine("Неверный тип данных");
-            }
+            X = x;
+            Y = y;
         }
 
+        public Ttype X { get => x; set => x = value; }
+        public Ptype Y { get => y; set => y = value; }
+
+        public void Mul(Ttype x, Ptype y)
+        {
+            if(typeof(int) && typeof(double))
+            {
+                Ttype x = a;
+                int y = b;
+                Console.WriteLine(a+b);
+            }
+         
+        }
+        
     }
 }
