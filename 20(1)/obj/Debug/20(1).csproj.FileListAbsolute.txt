@@ -1,0 +1,7 @@
+D:\Kollege\Основы алгоритмизации\20(1)\bin\Debug\20(1).exe.config
+D:\Kollege\Основы алгоритмизации\20(1)\bin\Debug\20(1).exe
+D:\Kollege\Основы алгоритмизации\20(1)\bin\Debug\20(1).pdb
+D:\Kollege\Основы алгоритмизации\20(1)\obj\Debug\20(1).csproj.AssemblyReference.cache
+D:\Kollege\Основы алгоритмизации\20(1)\obj\Debug\20(1).csproj.CoreCompileInputs.cache
+D:\Kollege\Основы алгоритмизации\20(1)\obj\Debug\20(1).exe
+D:\Kollege\Основы алгоритмизации\20(1)\obj\Debug\20(1).pdb
